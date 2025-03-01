@@ -1,0 +1,57 @@
+#about {
+    margin: 0;
+    padding: 50px 0px;
+    padding-left: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#about .description{
+    width: 100%;
+}
+
+#about .title{
+    position: relative;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+
+#about p{
+    line-height: 25px;
+}
+
+#about .title::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    content: "";
+    border: 2px solid hsl(240, 100%, 70%);
+}
+
+#about .passion{
+    font-family: sans-serif;
+    font-size: smaller;
+}
+
+#about button{
+    border: 0;
+    border-radius: 1000px;
+    padding: 10px 20px;
+    color: white;
+    background-color: hsl(220, 100%, 30%);
+}
+
+#about button:hover{
+    background-color: hsl(220, 100%, 20%);
+}
+
+#about .profile-picture{
+    text-align: center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 5px 0px hsl(0,0%,10%);
+}
