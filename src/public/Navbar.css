@@ -1,13 +1,21 @@
+#navbar{
+    position: sticky;
+    top: 0;
+}
+
 #navbar ul{
     margin: 0;
     padding: 10px 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #navbar li{
     cursor: pointer;
     position: relative;
+    list-style-type: none;
+    padding: 20px;
 }
 
 #navbar li:hover::after{

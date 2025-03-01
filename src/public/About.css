@@ -1,7 +1,7 @@
 #about {
     margin: 0;
-    padding: 50px 0px;
-    padding-left: 120px;
+    padding: 70px 0px;
+    padding-left: var(--horizontal-padding);
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -39,9 +39,10 @@
 #about button{
     border: 0;
     border-radius: 1000px;
-    padding: 10px 20px;
+    padding: 12px 30px;
     color: white;
     background-color: hsl(220, 100%, 30%);
+    outline: none;
 }
 
 #about button:hover{
@@ -49,9 +50,10 @@
 }
 
 #about .profile-picture{
-    text-align: center;
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    box-shadow: 0px 0px 5px 0px hsl(0,0%,10%);
+    text-align: center;
+    line-height: 200px;
+    box-shadow: 0px 0px 10px 0px hsl(0,0%,70%);
 }

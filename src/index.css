@@ -1,3 +1,7 @@
+:root{
+  --horizontal-padding: 120px;
+}
+
 body{
   margin: 0;
   font-family: Helvetica;

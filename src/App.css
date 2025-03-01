@@ -1,6 +1,5 @@
-li {
-  list-style-type: none;
-  padding: 20px;
+section:nth-child(odd){
+  background-color: hsl(240,30%,100%);
 }
 
 section:nth-child(even){
