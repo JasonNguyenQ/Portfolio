@@ -14,14 +14,14 @@ export default function Projects({ref} : {ref : React.RefObject<HTMLElement | nu
                     subtitle="HTML, CSS, JS/TS, React, Express.js, MySQL"
                     image={p1}
                     content="A social media app that allows for instantaneous transmission of messages between many different users"
-                    link=""
+                    link={undefined}
                 />
                 <Card 
                     title="Scientific Text Classifier"
                     subtitle="Python, Matplotlib, Pandas, NumPy"
                     image={p2}
                     content="A text classifier that distinguishes between different scientific categories (e.g. Physics, Computer Science, Mathematics)"
-                    link=""
+                    link={undefined}
                 />
                 <Card 
                     title="Medical Search Engine"
@@ -33,16 +33,16 @@ export default function Projects({ref} : {ref : React.RefObject<HTMLElement | nu
                 <Card 
                     title="Asteroids"
                     subtitle="C++"
-                    image={""}
+                    image={undefined}
                     content="An Asteroids-like game made with a ST7735 display, joystick modules, shift registers etc., where users can fire a laser to destroy incoming asteroids"
-                    link=""
+                    link={undefined}
                 />
                 <Card 
                     title="9-to-5 Game"
                     subtitle="C#"
-                    image={""}
+                    image={undefined}
                     content="A game made on Unity where players fight their corporate enemies in order to finally make it to a top level where they take on the boss"
-                    link=""
+                    link={undefined}
                 />
             </div>
         </section>

@@ -22,6 +22,8 @@
 
 #education img{
     width: 700px;
+    height: 100%;
     color: hsl(0,0%,60%);
     text-align: center;
+    object-fit: cover;
 }

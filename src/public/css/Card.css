@@ -18,11 +18,12 @@
     justify-content: space-between;
 }
 
-.card h3{
+.card h2{
+    font-size: larger;
     margin-bottom: 0;
 }
 
-.card h3+em{
+.card h2+em{
     font-size: small;
     margin: 0;
 }
