@@ -1,15 +1,14 @@
-import { useRef } from 'react';
 import '../public/css/Navbar.css'
 
 export default function Navbar(
-    {about, education, projects, skills} : 
+    {nav, about, education, projects, skills} : 
     {
+        nav: React.RefObject<HTMLElement | null>,
         about : React.RefObject<HTMLElement | null>,
         education : React.RefObject<HTMLElement | null>,
         projects : React.RefObject<HTMLElement | null>,
         skills : React.RefObject<HTMLElement | null>,
     }){
-    const navRef = useRef<HTMLElement>(null)
 
     function handleScroll(element: string){
         const refMap : Record<string, React.RefObject<HTMLElement | null>> = {
@@ -22,7 +21,7 @@ export default function Navbar(
         const start = 
         refMap[element].current!.getBoundingClientRect().top + //Relative offset from current viewport screen
         window.scrollY - //Absolute offset of current screen relative to entire doc
-        navRef.current!.clientHeight //Account of sticky positioning of navbar
+        nav.current!.clientHeight //Account of sticky positioning of navbar
         
         window.scrollTo({
             top: start,
@@ -31,7 +30,7 @@ export default function Navbar(
     }
 
     return (
-        <section id="navbar" ref={navRef}>
+        <section id="navbar" ref={nav}>
             <ul>
                 <li onClick={()=>handleScroll('about')}>About</li>
                 <li onClick={()=>handleScroll('education')}>Education</li>

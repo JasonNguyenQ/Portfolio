@@ -17,7 +17,7 @@ export default function Card(
                     <p>{content}</p>
                 </div>
                 <button 
-                    disabled={link?.length === 0}
+                    disabled={link === undefined || link.length === 0}
                     onClick={()=>{if (link) window.open(link)}}>
                         {link?.length! > 0 ? "View Project" : "Unavailable"}
                 </button>
