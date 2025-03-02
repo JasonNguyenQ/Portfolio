@@ -19,3 +19,9 @@
 #education .description li{
     margin-bottom: 10px;
 }
+
+#education img{
+    width: 700px;
+    color: hsl(0,0%,60%);
+    text-align: center;
+}

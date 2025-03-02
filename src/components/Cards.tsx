@@ -1,8 +1,10 @@
 import '../public/css/Card.css'
 
 export default function Card(
-    { title, subtitle, content, image } : { title: string, subtitle: string, content: string, image: string }
+    { title, subtitle, content, image, link } : 
+    { title: string, subtitle: string, content: string, image: string, link: string }
 ) {
+
     return (
         <div className="card">
             <img src={image} alt="No Preview Available"/>
@@ -14,7 +16,11 @@ export default function Card(
                     </header>
                     <p>{content}</p>
                 </div>
-                <button>View Project</button>
+                <button 
+                    disabled={link.length === 0}
+                    onClick={()=>{window.open(link)}}>
+                        {link.length > 0 ? "View Project" : "Unavailable"}
+                </button>
             </div>
         </div>
     )
