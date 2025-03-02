@@ -10,7 +10,6 @@
 }
 
 #education .description {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -18,5 +17,5 @@
 }
 
 #education .description li{
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }

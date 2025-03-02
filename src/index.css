@@ -1,8 +1,10 @@
 :root{
   --horizontal-padding: 120px;
+  --btn-clr: hsl(220, 100%, 30%);
+  --btn-hover-clr: hsl(220, 100%, 20%);
 }
 
 body{
   margin: 0;
-  font-family: Helvetica;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

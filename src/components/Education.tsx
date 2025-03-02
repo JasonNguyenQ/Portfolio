@@ -1,5 +1,5 @@
-import '../public/Education.css'
-import UCR from '../public/UCR.jpg'
+import '../public/css/Education.css'
+import UCR from '../public/images/UCR.jpg'
 
 export default function Education(){
     return (

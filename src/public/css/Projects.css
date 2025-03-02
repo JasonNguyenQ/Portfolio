@@ -1,0 +1,19 @@
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px var(--horizontal-padding);
+}
+
+#projects h1{
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    border-bottom: 3px solid hsl(240, 50%, 50%);
+}
+
+#projects .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
