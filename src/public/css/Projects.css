@@ -9,7 +9,7 @@
     padding: 10px;
     position: relative;
     text-align: center;
-    border-bottom: 3px solid hsl(240, 50%, 50%);
+    border-bottom: 3px solid var(--underline-clr);
 }
 
 #projects .card-container{

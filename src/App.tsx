@@ -25,7 +25,10 @@ function App() {
           projects={projectsElement}
           skills={skillsElement}
         />
-        <About ref={aboutElement} projects={projectsElement} nav={navElement}/>
+        <About 
+          ref={aboutElement} 
+          projects={projectsElement} 
+          nav={navElement}/>
         <Education ref={educationElement}/>
         <Projects ref={projectsElement}/>
         <Skills ref={skillsElement}/>

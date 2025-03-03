@@ -1,0 +1,27 @@
+.skill{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    background-color: hsl(0,0%,95%);
+    border-radius: 20px;
+    padding: 20px
+}
+
+.skill img{
+    margin: 0;
+}
+
+.skill h2{
+    margin: 0;
+    font-size: medium;
+}
+
+.skill p{
+    margin: 0;
+    font-size: small;
+}
+
+.skill .preferred{
+    font-weight: bold;
+    font-size: x-small;
+}
