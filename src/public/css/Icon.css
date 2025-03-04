@@ -4,13 +4,14 @@
     --time: 15s;
     text-align: center;
     position: absolute;
+    width: var(--img-size);
     left: 100%;
     animation: slide var(--time) linear infinite;
     animation-delay: calc(((var(--time) / var(--amount)) * (var(--position) - var(--amount))));
 }
 
 .icon .icon-name {
-    font-size: small;
+    font-size: x-small;
     font-weight: bold;
 }
 

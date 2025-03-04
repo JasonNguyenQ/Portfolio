@@ -24,7 +24,7 @@ export default function About(
             <div className="description">
                 <h1>Hello, I'm Jason Nguyen!</h1>
                 <p className="title">Software Developer</p>
-                <p className="passion">I am passionate about full-stack development and I am constantly learning and figuring out new innovative ways to solve problems.</p>
+                <p className="passion">I am a recent college graduate who is passionate about full-stack development, and I am constantly learning and figuring out new innovative ways to solve problems. I am based in <strong>California in the United States of America</strong>, and my preferred tech stack includes <strong className="tech-stack">MySQL, Express.js, React, and Node.js</strong>.</p>
                 <button onClick={handleScroll}>View Projects</button>
             </div>
             <img className='profile-picture' src={undefined} alt='Profile Picture'/>
