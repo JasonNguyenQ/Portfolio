@@ -12,7 +12,7 @@ export default function Icon(
     
     return (
         <div className="icon" style={style}>
-            <img src={icon}/>
+            <img src={icon} alt={name}/>
             <div className="icon-name">{name}</div>
         </div>
     )

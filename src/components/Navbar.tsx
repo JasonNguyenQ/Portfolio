@@ -1,13 +1,14 @@
 import '../public/css/Navbar.css'
 
 export default function Navbar(
-    {nav, about, education, projects, skills} : 
+    {nav, about, education, projects, skills, contact} : 
     {
         nav: React.RefObject<HTMLElement | null>,
         about : React.RefObject<HTMLElement | null>,
         education : React.RefObject<HTMLElement | null>,
         projects : React.RefObject<HTMLElement | null>,
         skills : React.RefObject<HTMLElement | null>,
+        contact : React.RefObject<HTMLElement | null>,
     }){
 
     function handleScroll(element: string){
@@ -15,7 +16,8 @@ export default function Navbar(
             'about' : about,
             'education': education,
             'projects' : projects,
-            'skills' : skills
+            'skills' : skills,
+            'contact' : contact
         }
 
         const start = 

@@ -16,9 +16,9 @@ export default function Skills({ref} : {ref : React.RefObject<HTMLElement | null
                 })}
             </div>
             <div className="skills-container">
-                {skillMap.map((skill)=>{
+                {skillMap.map((skill, index)=>{
                     return (
-                        <Skill name={skill.name} icon={skill.icon} proficiency={skill.proficiency} preferred={skill.preferred}></Skill>
+                        <Skill key={index} name={skill.name} icon={skill.icon} proficiency={skill.proficiency} preferred={skill.preferred}></Skill>
                     )
                 })}
             </div>

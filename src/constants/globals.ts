@@ -17,12 +17,12 @@ export const skillMap = [
     {
         name: "Typescript", 
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", 
-        proficiency: "Advanced"
+        proficiency: "Proficient"
     },
     {
         name: "Express.js", 
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg", 
-        proficiency: "Advanced",
+        proficiency: "Proficient",
         preferred: true
     },
     {
@@ -65,23 +65,23 @@ export const skillMap = [
     {
         name: "MySQL", 
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg", 
-        proficiency: "Advanced",
+        proficiency: "Proficient",
         preferred: true
     },
     {
         name: "Git", 
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg", 
-        proficiency: "Advanced"
+        proficiency: "Proficient"
     },
     {
         name: "Github", 
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg", 
-        proficiency: "Advanced"
+        proficiency: "Proficient"
     },
     {
         name: "VSCode", 
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg", 
-        proficiency: "Advanced"
+        proficiency: "Proficient"
     },
     {
         name: "Docker", 
@@ -104,7 +104,7 @@ export const skillMap = [
         proficiency: "Novice"
     },
     {
-        name: "Isomnia", 
+        name: "Insomnia", 
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg", 
         proficiency: "Intermediate"
     },

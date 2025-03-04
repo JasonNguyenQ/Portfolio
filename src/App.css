@@ -5,3 +5,7 @@ section:nth-child(odd){
 section:nth-child(even){
   background-color: hsl(240,30%,95%);
 }
+
+section:last-child{
+  background-color: hsl(0,0%,80%);
+}

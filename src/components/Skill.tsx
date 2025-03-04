@@ -11,7 +11,7 @@ export default function Skill(
 ){
     return (
         <div className="skill">
-            <img src={icon}/>
+            <img src={icon} alt={name}/>
             <div className="description">
                 <header>
                     <h2>{name}</h2>

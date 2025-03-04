@@ -7,6 +7,7 @@ import Skills from './components/Skills'
 import { useRef } from 'react'
 
 import './App.css'
+import Contact from './components/Contact'
 
 function App() {
   const navElement = useRef<HTMLElement>(null)
@@ -14,6 +15,7 @@ function App() {
   const educationElement = useRef<HTMLElement>(null)
   const projectsElement = useRef<HTMLElement>(null)
   const skillsElement = useRef<HTMLElement>(null)
+  const contactElement = useRef<HTMLElement>(null)
   
   return (
     <>
@@ -24,6 +26,7 @@ function App() {
           education={educationElement}
           projects={projectsElement}
           skills={skillsElement}
+          contact={contactElement}
         />
         <About 
           ref={aboutElement} 
@@ -32,6 +35,7 @@ function App() {
         <Education ref={educationElement}/>
         <Projects ref={projectsElement}/>
         <Skills ref={skillsElement}/>
+        <Contact ref={contactElement}/>
       </div>
     </>
   )
