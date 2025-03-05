@@ -1,4 +1,19 @@
-#contact {
-    margin: 0;
-    padding: 20px var(--horizontal-padding);
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    --img-size: 20px;
+}
+
+.contact img{
+    width: var(--img-size);
+    height: var(--img-size);
+}
+
+.contact a{
+    font-size: small;
+    color: hsl(0,0%,0%);
+    text-decoration: none;
+    line-height: var(--img-size);
 }

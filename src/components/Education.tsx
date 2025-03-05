@@ -5,7 +5,7 @@ export default function Education({ref} : {ref : React.RefObject<HTMLElement | n
     return (
         <section id="education" ref={ref}>
             <header>
-                <h2>Education</h2>
+                <h1>Education</h1>
                 <em>September 2021 - December 2024</em>
             </header>
             <div className="description">

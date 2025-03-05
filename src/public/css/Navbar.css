@@ -2,21 +2,41 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 20px;
 }
 
 #navbar ul{
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 #navbar li{
     cursor: pointer;
     position: relative;
     list-style-type: none;
     padding: 20px;
+}
+
+#navbar a{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 3px solid var(--underline-clr);
+    color: var(--underline-clr);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .2s
+}
+
+#navbar a:hover{
+    background-color: var(--underline-clr);
+    color: white;
 }
 
 #navbar li:hover::after{

@@ -1,9 +1,19 @@
+import { Link } from 'react-router-dom';
 import '../public/css/Contact.css'
 
-export default function Contact({ref} : {ref : React.RefObject<HTMLElement | null>}){
+export default function Contact(
+    {name, icon, link, content}:
+    {
+        name: string,
+        icon: string,
+        link: string,
+        content: string,
+    }
+){
     return (
-        <section id="contact" ref={ref}>
-            <h2>Contact</h2>
-        </section>
-    )
+        <div className="contact">
+            <img src={icon} alt={name}/>
+            <Link to={link} target='_blank'>{content} • {name}</Link>
+        </div>
+    );
 }

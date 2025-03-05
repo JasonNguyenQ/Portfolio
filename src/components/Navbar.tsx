@@ -1,14 +1,15 @@
 import '../public/css/Navbar.css'
+import Resume from '../public/Resume.pdf'
 
 export default function Navbar(
-    {nav, about, education, projects, skills, contact} : 
+    {nav, about, education, projects, skills, contacts} : 
     {
         nav: React.RefObject<HTMLElement | null>,
         about : React.RefObject<HTMLElement | null>,
         education : React.RefObject<HTMLElement | null>,
         projects : React.RefObject<HTMLElement | null>,
         skills : React.RefObject<HTMLElement | null>,
-        contact : React.RefObject<HTMLElement | null>,
+        contacts : React.RefObject<HTMLElement | null>,
     }){
 
     function handleScroll(element: string){
@@ -17,7 +18,7 @@ export default function Navbar(
             'education': education,
             'projects' : projects,
             'skills' : skills,
-            'contact' : contact
+            'contacts' : contacts
         }
 
         const start = 
@@ -38,8 +39,9 @@ export default function Navbar(
                 <li onClick={()=>handleScroll('education')}>Education</li>
                 <li onClick={()=>handleScroll('projects')}>Projects</li>
                 <li onClick={()=>handleScroll('skills')}>Skills</li>
-                <li onClick={()=>handleScroll('contact')}>Contact</li>
+                <li onClick={()=>handleScroll('contacts')}>Contacts</li>
             </ul>
+            <a href={Resume} download={"Jason_Nguyen_Full_Stack_Resume.pdf"}>Resume</a>
         </section>
     )
 }

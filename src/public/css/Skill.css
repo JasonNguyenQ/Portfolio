@@ -1,4 +1,5 @@
 .skill{
+    --img-size: 100px;
     display: flex;
     flex-direction: column;
     width: 100px;
@@ -8,7 +9,10 @@
 }
 
 .skill img{
+    align-self: center;
     margin: 0;
+    width: var(--img-size);
+    height: var(--img-size);
 }
 
 .skill h2{

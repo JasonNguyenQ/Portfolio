@@ -1,0 +1,33 @@
+#contacts {
+    margin: 0;
+    padding: 20px var(--horizontal-padding);
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacts h1{
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#contacts h1::after{
+    --height: 3px;
+    --overflow: 300%;
+    position: absolute;
+    content: "";
+    width: calc(100% + var(--overflow));
+    height: var(--height);
+    background-color: hsl(0,0%,40%);
+    border-radius: var(--height);
+    bottom: 0%;
+    left: calc(var(--overflow)/2 * -1);
+}
+
+#contacts .contact-information{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
