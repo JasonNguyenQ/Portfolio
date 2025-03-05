@@ -1,7 +1,7 @@
 .icon {
-    --img-size: 50px;
-    --end: 200px;
-    --time: 15s;
+    --img-size: 50px; /*size of image icons*/
+    --gap: 20px; /*gap between icons*/
+    --time: 15s; /*animation duration of slider*/
     text-align: center;
     position: absolute;
     width: var(--img-size);
@@ -22,9 +22,9 @@
 
 @keyframes slide {
     from {
-        left: 100%;
+        transform: translateX(0);
     }
     to {
-        left: calc((var(--img-size) + var(--end)) * -1)
+        transform: translateX(min(calc((var(--img-size) + var(--gap)) * var(--amount) * -1), -100vw));
     }
 }
