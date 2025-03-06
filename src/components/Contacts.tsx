@@ -1,6 +1,6 @@
-import '../public/css/Contacts.css'
-import Mail from '../public/images/envelope.svg'
-import Phone from '../public/images/telephone.svg'
+import '@/css/Contacts.css'
+import Mail from '@/images/envelope.svg'
+import Phone from '@/images/telephone.svg'
 import Contact from './Contact'
 
 export default function Contacts({ref} : {ref : React.RefObject<HTMLElement | null>}){

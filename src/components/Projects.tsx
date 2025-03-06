@@ -1,8 +1,8 @@
 import Card from './Cards'
-import p1 from '../public/images/Social-Media-App-Snapshot.png'
-import p2 from '../public/images/Scientific-Text-Classifier-Snapshot.png'
-import p3 from '../public/images/Medical-Search-Engine-Snapshot.png'
-import '../public/css/Projects.css'
+import p1 from '@/images/Social-Media-App-Snapshot.png'
+import p2 from '@/images/Scientific-Text-Classifier-Snapshot.png'
+import p3 from '@/images/Medical-Search-Engine-Snapshot.png'
+import '@/css/Projects.css'
 
 export default function Projects({ref} : {ref : React.RefObject<HTMLElement | null>}){
     return (

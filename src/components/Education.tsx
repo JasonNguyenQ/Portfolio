@@ -1,5 +1,5 @@
-import '../public/css/Education.css'
-import UCR from '../public/images/UCR.jpg'
+import '@/css/Education.css'
+import UCR from '@/images/UCR.jpg'
 
 export default function Education({ref} : {ref : React.RefObject<HTMLElement | null>}){
     return (

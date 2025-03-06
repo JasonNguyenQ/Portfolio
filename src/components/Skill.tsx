@@ -1,4 +1,4 @@
-import '../public/css/Skill.css'
+import '@/css/Skill.css'
 
 export default function Skill(
     {icon, name, proficiency, preferred}:

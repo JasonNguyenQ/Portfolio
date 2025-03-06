@@ -1,4 +1,4 @@
-import '../public/css/Skills.css'
+import '@/css/Skills.css'
 import Icon from './Icon'
 import Skill from './Skill'
 import { skillMap } from '../constants/globals'

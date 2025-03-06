@@ -1,4 +1,4 @@
-import '../public/css/Icon.css'
+import '@/css/Icon.css'
 
 export default function Icon(
     { name, icon, position, amount } : 

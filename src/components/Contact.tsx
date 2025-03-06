@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../public/css/Contact.css'
+import '@/css/Contact.css'
 
 export default function Contact(
     {name, icon, link, content}:

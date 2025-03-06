@@ -1,4 +1,4 @@
-import '../public/css/Navbar.css'
+import '@/css/Navbar.css'
 import Resume from '../public/Resume.pdf'
 
 export default function Navbar(

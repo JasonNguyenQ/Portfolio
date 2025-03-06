@@ -1,4 +1,4 @@
-import '../public/css/About.css'
+import '@/css/About.css'
 
 export default function About(
     {ref, projects, nav} : {

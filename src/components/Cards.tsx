@@ -1,4 +1,4 @@
-import '../public/css/Card.css'
+import '@/css/Card.css'
 
 export default function Card(
     { title, subtitle, content, image, link, date } : 
