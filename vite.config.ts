@@ -14,5 +14,10 @@ export default defineConfig({
     }
   },
   plugins: [react()],
-  base: "/Portfolio"
+  base: "/Portfolio",
+  server: {
+    host: true,
+    strictPort: true,
+    port: 5173
+  }
 })
