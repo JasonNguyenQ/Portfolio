@@ -108,4 +108,9 @@ export const skillMap = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg", 
         proficiency: "Intermediate"
     },
+    {
+        name: "Nginx", 
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg", 
+        proficiency: "Novice"
+    },
 ]

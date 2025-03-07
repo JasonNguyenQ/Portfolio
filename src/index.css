@@ -9,3 +9,15 @@ body{
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+@media screen and (max-width: 1000px) {
+  :root{
+    --horizontal-padding: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  :root{
+    --horizontal-padding: 20px;
+  }
+}

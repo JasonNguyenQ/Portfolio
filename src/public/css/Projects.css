@@ -13,7 +13,31 @@
 }
 
 #projects .card-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
+}
+
+@media screen and (max-width: 1300px) {
+    #projects .card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #projects .card-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #projects .card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #projects .card-container{
+        grid-template-columns: 1fr;
+    }
 }
