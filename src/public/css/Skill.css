@@ -1,8 +1,8 @@
 .skill{
-    --img-size: 100px;
+    --img-size: 6.25rem;
     display: flex;
     flex-direction: column;
-    width: 100px;
+    width: var(--img-size);
     background-color: hsl(0,0%,95%);
     border-radius: 20px;
     padding: 20px

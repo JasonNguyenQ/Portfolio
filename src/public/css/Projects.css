@@ -18,25 +18,25 @@
     gap: 5px;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 81.25rem) {
     #projects .card-container{
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5rem) {
     #projects .card-container{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
     #projects .card-container{
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 31.25rem) {
     #projects .card-container{
         grid-template-columns: 1fr;
     }

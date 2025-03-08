@@ -1,7 +1,11 @@
 .icon {
-    --img-size: 50px; /*size of image icons*/
+    --img-size: 3.125rem; /*size of image icons*/
     --gap: 20px; /*gap between icons*/
     --time: 15s; /*animation duration of slider*/
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
     text-align: center;
     position: absolute;
     width: var(--img-size);
