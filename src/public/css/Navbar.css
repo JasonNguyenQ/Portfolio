@@ -1,50 +1,74 @@
-#navbar{
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 0px 20px;
+#navbar {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	padding: 0 20px;
+	z-index: 1000;
 }
 
-#navbar ul{
-    margin: 0;
-    padding: 10px 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#navbar ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 10px;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#navbar li{
-    cursor: pointer;
-    position: relative;
-    list-style-type: none;
-    padding: 20px;
+#navbar li {
+	position: relative;
+	cursor: pointer;
+	padding: 20px;
+	list-style-type: none;
 }
 
-#navbar a{
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: 3px solid var(--underline-clr);
-    color: var(--underline-clr);
-    font-weight: 500;
-    text-decoration: none;
-    transition: all .2s
+#navbar a {
+	padding: 10px 20px;
+	border: 3px solid var(--underline-clr);
+	border-radius: 20px;
+	color: var(--underline-clr);
+	font-weight: 500;
+	text-decoration: none;
+	transition: all 0.2s;
 }
 
-#navbar a:hover{
-    background-color: var(--underline-clr);
-    color: white;
+#navbar a:hover {
+	background-color: var(--underline-clr);
+	color: white;
 }
 
-#navbar li:hover::after{
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border: 2px solid black;
-    border-radius: 50px;
+#navbar li:hover::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 50px;
+	content: "";
+}
+
+@media screen and (width <= 40rem) {
+	#navbar li {
+		padding: 10px;
+		font-size: small;
+	}
+
+	#navbar a {
+		padding: 5px 10px;
+		font-size: small;
+	}
+}
+
+@media screen and (width <= 28rem) {
+	#navbar li {
+		padding: 5px;
+		font-size: small;
+	}
+
+	#navbar a {
+		padding: 2.5px 5px;
+		font-size: small;
+	}
 }

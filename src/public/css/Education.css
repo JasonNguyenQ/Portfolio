@@ -1,71 +1,75 @@
 #education {
-    padding: 20px var(--horizontal-padding);
+	padding: 20px var(--horizontal-padding);
 }
 
 #education header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #education .description {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    line-height: 1.875rem;
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	line-height: 1.875rem;
 }
 
-#education .description li{
-    margin-bottom: 10px;
+#education .description li {
+	margin-bottom: 10px;
 }
 
-#education img{
-    width: 43.75rem;
-    height: 100%;
-    color: hsl(0,0%,60%);
-    text-align: center;
-    object-position: 55% 90%;
-    object-fit: cover;
+#education img {
+	width: 43.75rem;
+	height: 100%;
+	color: hsl(0deg 0% 60%);
+	text-align: center;
+	object-position: 55% 90%;
+	object-fit: cover;
 }
 
-@media screen and (max-width: 81.25rem){
-    #education .description{ align-items: center; }
+@media screen and (width <= 81.25rem) {
+	#education .description {
+		align-items: center;
+	}
 }
 
-@media screen and (max-width: 62.5rem){
-    #education .description{
-        gap: 20px;
-        flex-direction: column;
-        align-items: center;
-    }
+@media screen and (width <= 62.5rem) {
+	#education .description {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
 
-    #education img{
-        width: 100%;
-        height: 18.75rem;
-    }
+	#education img {
+		width: 100%;
+		height: 18.75rem;
+	}
 }
 
-@media screen and (max-width: 43.75rem){
-    #education em{ font-size: small; }
+@media screen and (width <= 43.75rem) {
+	#education em {
+		font-size: small;
+	}
 }
 
-@media screen and (max-width: 31.25rem){
-    #education .description{
-        line-height: 1.25rem;
-        font-size: small;
-    }
+@media screen and (width <= 31.25rem) {
+	#education .description {
+		font-size: small;
+		line-height: 1.25rem;
+	}
 }
 
-@media screen and (max-width: 25rem){
-    #education header{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 10px;
-    }
+@media screen and (width <= 25rem) {
+	#education header {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+		text-align: center;
+	}
 
-    #education h1{
-        margin-bottom: 0;
-    }
+	#education h1 {
+		margin-bottom: 0;
+	}
 }

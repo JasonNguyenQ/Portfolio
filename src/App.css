@@ -1,11 +1,11 @@
-section:nth-child(odd){
-  background-color: hsl(240,30%,100%);
+section:nth-child(odd) {
+	background-color: hsl(240deg 30% 100%);
 }
 
-section:nth-child(even){
-  background-color: hsl(240,30%,95%);
+section:nth-child(even) {
+	background-color: hsl(240deg 30% 95%);
 }
 
-section:last-child{
-  background-color: hsl(0,0%,80%);
+section:last-child {
+	background-color: hsl(0deg 0% 80%);
 }

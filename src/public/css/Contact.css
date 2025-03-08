@@ -1,19 +1,20 @@
-.contact{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    text-align: center;
-    --img-size: 20px;
+.contact {
+	--img-size: 20px;
+
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	text-align: center;
 }
 
-.contact img{
-    width: var(--img-size);
-    height: var(--img-size);
+.contact img {
+	width: var(--img-size);
+	height: var(--img-size);
 }
 
-.contact a{
-    font-size: small;
-    color: hsl(0,0%,0%);
-    text-decoration: none;
-    line-height: var(--img-size);
+.contact a {
+	color: hsl(0deg 0% 0%);
+	font-size: small;
+	text-decoration: none;
+	line-height: var(--img-size);
 }

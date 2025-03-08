@@ -1,31 +1,32 @@
-.skill{
-    --img-size: 6.25rem;
-    display: flex;
-    flex-direction: column;
-    width: var(--img-size);
-    background-color: hsl(0,0%,95%);
-    border-radius: 20px;
-    padding: 20px
+.skill {
+	--img-size: 6.25rem;
+
+	display: flex;
+	flex-direction: column;
+	width: var(--img-size);
+	padding: 20px;
+	border-radius: 20px;
+	background-color: hsl(0deg 0% 95%);
 }
 
-.skill img{
-    align-self: center;
-    margin: 0;
-    width: var(--img-size);
-    height: var(--img-size);
+.skill img {
+	align-self: center;
+	width: var(--img-size);
+	height: var(--img-size);
+	margin: 0;
 }
 
-.skill h2{
-    margin: 0;
-    font-size: medium;
+.skill h2 {
+	margin: 0;
+	font-size: medium;
 }
 
-.skill p{
-    margin: 0;
-    font-size: small;
+.skill p {
+	margin: 0;
+	font-size: small;
 }
 
-.skill .preferred{
-    font-weight: bold;
-    font-size: x-small;
+.skill .preferred {
+	font-size: x-small;
+	font-weight: bold;
 }

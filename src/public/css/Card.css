@@ -1,112 +1,128 @@
 .card {
-    --img-height: 12.5rem;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    background-color: hsl(0,0%,90%);
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px hsl(0,0%,70%);
+	--img-height: 12.5rem;
+
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	border-radius: 10px;
+	background-color: hsl(0deg 0% 90%);
+	box-shadow: 0 0 10px 0 hsl(0deg 0% 70%);
+	overflow: hidden;
 }
 
-.card .content{
-    padding: 20px;
-    padding-top: 0px;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-between;
+.card .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+	padding-top: 0;
+	flex: 1;
 }
 
-.card h2{
-    font-size: larger;
-    margin-bottom: 0;
+.card h2 {
+	margin-bottom: 0;
+	font-size: larger;
 }
 
-.card .technologies{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3px;
+.card .technologies {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3px;
 }
 
-.card .technology{
-    padding: 2px 5px;
-    border-radius: 5px;
-    font-size: small;
-    margin: 0;
+.card .technology {
+	margin: 0;
+	padding: 2px 5px;
+	border-radius: 5px;
+	font-size: small;
 }
 
-.card .additionals{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+.card .additionals {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
 }
 
 .card .additionals > span {
-    font-size: x-small;
+	font-size: x-small;
 }
 
-.card button{
-    cursor: pointer;
-    width: 35%;
-    border: 0;
-    border-radius: 1000px;
-    padding: .625rem;
-    color: white;
-    background-color: var(--btn-clr);
-    outline: none;
-    text-wrap-mode: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.card button {
+	cursor: pointer;
+	width: 35%;
+	padding: 0.625rem;
+	border: 0;
+	border-radius: 1000px;
+	outline: none;
+	background-color: var(--btn-clr);
+	color: white;
+	overflow: hidden;
+	text-wrap-mode: nowrap;
+	text-overflow: ellipsis;
 }
 
-.card button:hover{
-    background-color: var(--btn-hover-clr);
+.card button:hover {
+	background-color: var(--btn-hover-clr);
 }
 
 .card button:disabled {
-    cursor: not-allowed;
-    background-color: hsl(0,0%,10%);
+	cursor: not-allowed;
+	background-color: hsl(0deg 0% 10%);
 }
 
-.card .image-container{
-    display: flex;
-    height: var(--img-height);
-    overflow: hidden;
+.card .image-container {
+	display: flex;
+	height: var(--img-height);
+	overflow: hidden;
 }
 
-.card img{
-    background-color: hsl(0,0%,95%);
-    height: var(--img-height);
-    width: 100%;
-    object-position: 50% 50%;
-    object-fit: cover;
-    text-align: center;
-    line-height: var(--img-height);
-    transition: all .2s;
+.card img {
+	width: 100%;
+	height: var(--img-height);
+	background-color: hsl(0deg 0% 95%);
+	text-align: center;
+	line-height: var(--img-height);
+	object-position: 50% 50%;
+	object-fit: cover;
+	transition: all 0.2s;
 }
 
-.card img[src]:hover{
-    transform: scale(1.5);
+.card img[src]:hover {
+	transform: scale(1.5);
 }
 
-@media screen and (max-width: 62.5rem) {
-    .card{ 
-        --img-height: 6.25rem;
-    }
-    .card h2{ font-size: medium; }
-    .card .technology{ font-size: x-small; }
-    .card .content{ font-size: x-small; }
-    .card img{ font-size: small; }
-    .card .additionals{
-        flex-direction: column;
-        align-items: center;
-    }
-    .card button {
-        padding: 5px .625rem;
-        width: 100%;
-    }
-    .card .additionals > span{
-        display: block;
-    }
+@media screen and (width <= 62.5rem) {
+	.card {
+		--img-height: 6.25rem;
+	}
+
+	.card h2 {
+		font-size: medium;
+	}
+
+	.card .technology {
+		font-size: x-small;
+	}
+
+	.card .content {
+		font-size: x-small;
+	}
+
+	.card img {
+		font-size: small;
+	}
+
+	.card .additionals {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card button {
+		width: 100%;
+		padding: 5px 0.625rem;
+	}
+
+	.card .additionals > span {
+		display: block;
+	}
 }

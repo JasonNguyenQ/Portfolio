@@ -1,42 +1,44 @@
 #skills {
-    padding: 20px var(--horizontal-padding);
+	padding: 20px var(--horizontal-padding);
 }
 
-#skills h1{
-    padding-bottom: 10px;
-    position: relative;
+#skills h1 {
+	position: relative;
+	padding-bottom: 10px;
 }
 
-#skills h1::after{
-    --height: 3px;
-    position: absolute;
-    content: "";
-    width: 25%;
-    height: var(--height);
-    background-color:var(--underline-clr);
-    border-radius: var(--height);
-    bottom: 0%;
-    left: 0%;
+#skills h1::after {
+	--height: 3px;
+
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	width: 25%;
+	height: var(--height);
+	border-radius: var(--height);
+	background-color: var(--underline-clr);
+	content: "";
 }
 
-#skills .skills-slider{
-    --img-size: 6.25rem;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: var(--img-size);
-    mask-image: linear-gradient(
-        to left,
-        transparent 0%,
-        black 20%,
-        black 80%,
-        transparent 100%
-    );
+#skills .skills-slider {
+	--img-size: 6.25rem;
+
+	position: relative;
+	width: 100%;
+	height: var(--img-size);
+	overflow: hidden;
+	mask-image: linear-gradient(
+		to left,
+		transparent 0%,
+		black 20%,
+		black 80%,
+		transparent 100%
+	);
 }
 
-#skills .skills-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+#skills .skills-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
 }
