@@ -2,6 +2,7 @@
 	--img-size: 3.125rem; /* size of image icons */
 	--gap: 20px; /* gap between icons */
 	--time: 15s; /* animation duration of slider */
+	--width: max(var(--img-size), 5ch); /* width of container */
 
 	display: flex;
 	flex-direction: column;
@@ -9,7 +10,7 @@
 	gap: 5px;
 	position: absolute;
 	left: 100%;
-	width: var(--img-size);
+	width: var(--width);
 	text-align: center;
 	animation: slide var(--time) linear infinite;
 	animation-delay: calc(
@@ -34,7 +35,19 @@
 
 	to {
 		transform: translateX(
-			min(calc((var(--img-size) + var(--gap)) * var(--amount) * -1), -100vw)
+			min(calc((var(--width) + var(--gap)) * var(--amount) * -1), -100vw)
 		);
+	}
+}
+
+@media screen and (width <= 50rem) {
+	.icon {
+		--img-size: 2rem; /* size of image icons */
+		--gap: 10px; /* gap between icons */
+		--time: 15s; /* animation duration of slider */
+	}
+
+	.icon .icon-name {
+		font-size: xx-small;
 	}
 }

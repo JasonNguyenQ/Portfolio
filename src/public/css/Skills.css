@@ -42,3 +42,25 @@
 	justify-content: center;
 	gap: 20px;
 }
+
+@media screen and (width <= 62.5rem) {
+	#skills .skills-container {
+		gap: 15px;
+	}
+}
+
+@media screen and (width <= 50rem) {
+	#skills .skills-container {
+		gap: 10px;
+	}
+
+	#skills .skills-slider {
+		--img-size: 4rem;
+	}
+}
+
+@media screen and (width <= 31.25rem) {
+	#skills .skills-container {
+		gap: 5px;
+	}
+}
