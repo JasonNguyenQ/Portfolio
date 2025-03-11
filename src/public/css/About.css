@@ -74,3 +74,47 @@
 	font-size: large;
 	font-weight: bold;
 }
+
+@media screen and (width <= 43.75rem) {
+	#about {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 70px var(--horizontal-padding);
+		text-align: center;
+	}
+
+	#about .title::after {
+		width: 100%;
+	}
+}
+
+@media screen and (width <= 31.25rem) {
+	#about {
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+
+	#about .description h1 {
+		font-size: x-large;
+	}
+
+	#about p {
+		line-height: 1.25rem;
+	}
+
+	#about .title {
+		padding-bottom: 10px;
+		font-size: small;
+	}
+
+	#about .passion {
+		font-size: small;
+	}
+}
+
+@media screen and (width <= 25rem) {
+	#about .profile-picture {
+		--img-size: 150px;
+	}
+}
