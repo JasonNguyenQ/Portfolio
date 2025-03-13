@@ -113,4 +113,9 @@ export const skillMap = [
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg",
 		proficiency: "Novice",
 	},
+	{
+		name: "Playwright",
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg",
+		proficiency: "Novice",
+	},
 ];

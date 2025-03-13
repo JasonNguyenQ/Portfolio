@@ -2,6 +2,8 @@ import Card from "./Cards";
 import p1 from "@/images/Social-Media-App-Snapshot.png";
 import p2 from "@/images/Scientific-Text-Classifier-Snapshot.png";
 import p3 from "@/images/Medical-Search-Engine-Snapshot.png";
+import p4 from "@/images/Asteroids-Snapshot.png";
+import p5 from "@/images/9-to-5-Snapshot.webp";
 import "@/css/Projects.css";
 
 export default function Projects({
@@ -40,7 +42,7 @@ export default function Projects({
 				<Card
 					title="Asteroids"
 					subtitle="C++"
-					image={undefined}
+					image={p4}
 					content="An Asteroids-like game made with a ST7735 display, joystick modules, shift registers etc., where users can fire a laser to destroy incoming asteroids"
 					link={undefined}
 					date={"May 2024 - June 2024"}
@@ -48,7 +50,7 @@ export default function Projects({
 				<Card
 					title="9-to-5 Game"
 					subtitle="C#"
-					image={undefined}
+					image={p5}
 					content="A game made on Unity where players fight their corporate enemies in order to finally make it to a top level where they take on the boss"
 					link={undefined}
 					date={"April 2024 - July 2024"}
