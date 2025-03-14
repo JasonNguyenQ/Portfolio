@@ -1,10 +1,44 @@
 #about {
 	display: grid;
+	position: relative;
 	margin: 0;
 	padding: 70px 0;
 	padding-left: var(--horizontal-padding);
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 2fr 3fr;
 	place-items: center center;
+	overflow: hidden;
+	--overlay-left: 55%;
+	--overlay-width: 800px;
+	--overlay-height: 800px;
+	--overlay-radius: 30px;
+	--overlay-rotation: 45deg;
+}
+
+#about::before {
+	position: absolute;
+	left: var(--overlay-left);
+	content: "";
+	width: var(--overlay-width);
+	height: var(--overlay-height);
+	background: black;
+	border-radius: var(--overlay-radius);
+	transform: rotate(var(--overlay-rotation));
+	z-index: 1;
+	filter: invert(1) grayscale(1);
+	mix-blend-mode: difference;
+}
+
+#about::after {
+	position: absolute;
+	left: var(--overlay-left);
+	content: "";
+	width: var(--overlay-width);
+	height: var(--overlay-height);
+	background: var(--primary-clr-300);
+	z-index: 1;
+	border-radius: var(--overlay-radius);
+	transform: rotate(var(--overlay-rotation));
+	mix-blend-mode: screen;
 }
 
 #about .description {
@@ -30,7 +64,7 @@
 	bottom: 0;
 	left: 0;
 	width: 80%;
-	border: 2px solid hsl(240deg 100% 70%);
+	border: 2px solid var(--primary-clr-500);
 	content: "";
 }
 
@@ -39,7 +73,7 @@
 }
 
 #about .tech-stack {
-	color: hsl(240deg 100% 60%);
+	color: var(--primary-clr-500);
 }
 
 #about button {
@@ -50,6 +84,7 @@
 	outline: none;
 	background-color: var(--btn-clr);
 	color: white;
+	z-index: 1;
 }
 
 #about button:hover {
@@ -61,11 +96,13 @@
 
 	width: var(--img-size);
 	height: var(--img-size);
+	background: transparent;
 	border-radius: 50%;
-	color: hsl(0deg 0% 60%);
-	box-shadow: 0 0 10px 0 hsl(0deg 0% 70%);
+	color: white;
+	box-shadow: 0 0 10px 0 white;
 	text-align: center;
 	line-height: var(--img-size);
+	z-index: 1;
 }
 
 #about .profile-picture:not([src]) {
@@ -84,8 +121,25 @@
 		text-align: center;
 	}
 
+	#about::before {
+		display: none;
+	}
+
+	#about::after {
+		display: none;
+	}
+
 	#about .title::after {
 		width: 100%;
+	}
+
+	#about::before {
+		display: none;
+	}
+
+	#about .profile-picture {
+		color: hsl(0deg 0% 60%);
+		box-shadow: 0 0 10px 0 hsl(0deg, 0%, 80%);
 	}
 }
 

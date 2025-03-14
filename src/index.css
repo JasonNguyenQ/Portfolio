@@ -1,8 +1,18 @@
 :root {
 	--horizontal-padding: 8%;
-	--btn-clr: hsl(220deg 100% 30%);
-	--btn-hover-clr: hsl(220deg 100% 20%);
-	--underline-clr: hsl(240deg 50% 50%);
+
+	--primary-clr-900: hsl(220deg, 76%, 90%);
+	--primary-clr-800: hsl(220deg, 76%, 80%);
+	--primary-clr-700: hsl(220deg, 76%, 70%);
+	--primary-clr-600: hsl(220deg, 76%, 60%);
+	--primary-clr-500: hsl(220deg, 76%, 50%);
+	--primary-clr-400: hsl(220deg, 76%, 40%);
+	--primary-clr-300: hsl(220deg, 76%, 30%);
+	--primary-clr-200: hsl(220deg, 76%, 20%);
+
+	--btn-clr: var(--primary-clr-400);
+	--btn-hover-clr: var(--primary-clr-300);
+	--underline-clr: var(--primary-clr-400);
 }
 
 body {

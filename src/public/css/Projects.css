@@ -15,29 +15,6 @@
 #projects .card-container {
 	display: grid;
 	gap: 5px;
-	grid-template-columns: 1fr 1fr 1fr;
-}
-
-@media screen and (width <= 81.25rem) {
-	#projects .card-container {
-		grid-template-columns: 1fr 1fr;
-	}
-}
-
-@media screen and (width <= 62.5rem) {
-	#projects .card-container {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-}
-
-@media screen and (width <= 50rem) {
-	#projects .card-container {
-		grid-template-columns: 1fr 1fr;
-	}
-}
-
-@media screen and (width <= 31.25rem) {
-	#projects .card-container {
-		grid-template-columns: 1fr;
-	}
+	width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
 }

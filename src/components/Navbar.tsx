@@ -38,16 +38,18 @@ export default function Navbar({
 
 	return (
 		<section id="navbar" ref={nav}>
-			<ul>
-				<li onClick={() => handleScroll("about")}>About</li>
-				<li onClick={() => handleScroll("education")}>Education</li>
-				<li onClick={() => handleScroll("projects")}>Projects</li>
-				<li onClick={() => handleScroll("skills")}>Skills</li>
-				<li onClick={() => handleScroll("contacts")}>Contacts</li>
-			</ul>
-			<a href={Resume} download={"Jason_Nguyen_Full_Stack_Resume.pdf"}>
-				Resume
-			</a>
+			<div className="nav-wrapper">
+				<ul>
+					<li onClick={() => handleScroll("about")}>About</li>
+					<li onClick={() => handleScroll("education")}>Education</li>
+					<li onClick={() => handleScroll("projects")}>Projects</li>
+					<li onClick={() => handleScroll("skills")}>Skills</li>
+					<li onClick={() => handleScroll("contacts")}>Contacts</li>
+				</ul>
+				<a href={Resume} download={"Jason_Nguyen_Full_Stack_Resume.pdf"}>
+					Resume
+				</a>
+			</div>
 		</section>
 	);
 }
