@@ -5,16 +5,19 @@
 	align-items: center;
 	gap: 5px;
 	text-align: center;
+	border-radius: 10px;
+	padding: 1px 10px;
+	color: hsl(0deg 0% 0%);
+	font-size: small;
+	text-decoration: none;
+	line-height: var(--img-size);
+}
+
+.contact:hover {
+	background-color: hsl(0deg, 0%, 75%);
 }
 
 .contact img {
 	width: var(--img-size);
 	height: var(--img-size);
-}
-
-.contact a {
-	color: hsl(0deg 0% 0%);
-	font-size: small;
-	text-decoration: none;
-	line-height: var(--img-size);
 }

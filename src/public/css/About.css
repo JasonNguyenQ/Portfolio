@@ -130,6 +130,16 @@
 	font-weight: bold;
 }
 
+@media (prefers-reduced-motion) {
+	#about::before {
+		transform: rotate(var(--overlay-rotation));
+	}
+
+	#about:hover::after {
+		transform: rotate(var(--overlay-rotation));
+	}
+}
+
 @media screen and (width <= 57rem) {
 	#about {
 		display: flex;

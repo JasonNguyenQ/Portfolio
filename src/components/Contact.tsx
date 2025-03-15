@@ -13,11 +13,9 @@ export default function Contact({
 	content: string;
 }) {
 	return (
-		<div className="contact">
+		<Link className="contact" to={link} target="_blank">
 			<img src={icon} alt={name} />
-			<Link to={link} target="_blank">
-				{content} • {name}
-			</Link>
-		</div>
+			{content} • {name}
+		</Link>
 	);
 }

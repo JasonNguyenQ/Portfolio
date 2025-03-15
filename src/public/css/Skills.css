@@ -23,6 +23,8 @@
 #skills .skills-slider {
 	--img-size: 6.25rem;
 
+	display: flex;
+	gap: 20px;
 	position: relative;
 	width: 100%;
 	height: var(--img-size);

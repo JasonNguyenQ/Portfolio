@@ -40,6 +40,13 @@
 	}
 }
 
+@media (prefers-reduced-motion) {
+	.icon {
+		position: static;
+		animation: none;
+	}
+}
+
 @media screen and (width <= 50rem) {
 	.icon {
 		--img-size: 2rem; /* size of image icons */

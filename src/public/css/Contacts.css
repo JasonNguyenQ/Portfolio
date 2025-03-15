@@ -4,7 +4,6 @@
 	align-items: center;
 	margin: 0;
 	padding: 20px var(--horizontal-padding);
-	padding-bottom: 50px;
 }
 
 #contacts h1 {
@@ -31,4 +30,10 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;
+}
+
+#contacts p {
+	margin-top: 30px;
+	justify-self: end;
+	font-size: small;
 }

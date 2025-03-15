@@ -36,6 +36,7 @@ export default function Contacts({
 					link="https://github.com/JasonNguyenQ"
 					content="https://github.com/JasonNguyenQ"
 				/>
+				<p>Copyright &copy; 2025 Jason Nguyen | All rights reserved.</p>
 			</div>
 		</section>
 	);

@@ -91,6 +91,12 @@
 	transform: scale(1.5);
 }
 
+@media (prefers-reduced-motion) {
+	.card img[src]:hover {
+		transform: scale(1);
+	}
+}
+
 @media screen and (width <= 62.5rem) {
 	.card {
 		--img-height: 6.25rem;
