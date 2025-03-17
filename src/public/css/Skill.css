@@ -1,12 +1,13 @@
 .skill {
-	--img-size: 6.25rem;
+	--img-size: 5rem;
 
 	display: flex;
 	flex-direction: column;
 	width: max(var(--img-size), 10ch);
-	padding: 20px;
-	border-radius: 20px;
-	background-color: hsl(0deg 0% 95%);
+	padding: 10px;
+	border-radius: 10px;
+	background-color: hsl(0deg 0% 98%);
+	border: 1px solid hsl(0deg 0% 94%);
 }
 
 .skill img {
