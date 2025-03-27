@@ -20,7 +20,7 @@ export default function Projects({
 					subtitle="HTML CSS JS/TS React Express.js MySQL"
 					image={p1}
 					content="A social media app that allows for instantaneous transmission of messages between many different users"
-					link={undefined}
+					link={"https://github.com/JasonNguyenQ/Social_Media_App_Frontend"}
 					date={"Febuary 2025 - Present"}
 				/>
 				<Card

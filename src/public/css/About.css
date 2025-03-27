@@ -2,7 +2,7 @@
 	display: grid;
 	position: relative;
 	margin: 0;
-	padding: 70px 0;
+	padding: 100px 0;
 	padding-left: var(--horizontal-padding);
 	grid-template-columns: 2fr 3fr;
 	place-items: center center;
