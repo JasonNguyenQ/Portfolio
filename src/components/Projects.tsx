@@ -17,11 +17,11 @@ export default function Projects({
 			<div className="card-container">
 				<Card
 					title="Social Media App"
-					subtitle="HTML CSS JS/TS React Express.js MySQL"
+					subtitle="HTML CSS JS/TS React Express.js MySQL Redis"
 					image={p1}
 					content="A social media app that allows for instantaneous transmission of messages between many different users"
 					link={"https://github.com/JasonNguyenQ/Social_Media_App_Frontend"}
-					date={"Febuary 2025 - Present"}
+					date={"Febuary 2025 - May 2025"}
 				/>
 				<Card
 					title="Scientific Text Classifier"

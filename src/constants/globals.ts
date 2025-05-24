@@ -123,4 +123,9 @@ export const skillMap = [
 		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
 		proficiency: "Novice",
 	},
+	{
+		name: "Redis",
+		icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
+		proficiency: "Novice",
+	},
 ];
