@@ -1,4 +1,5 @@
 import "@/css/About.css";
+import pfp from "@/images/pfp.webp"
 
 export default function About({
 	ref,
@@ -39,7 +40,9 @@ export default function About({
 				</p>
 				<button onClick={handleScroll}>View Projects</button>
 			</div>
-			<img className="profile-picture" src={undefined} alt="Profile Picture" />
+			<div className="image-wrapper">
+				<img className="profile-picture" src={pfp} alt="Profile Picture"/>
+			</div>
 		</section>
 	);
 }

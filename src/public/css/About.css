@@ -7,6 +7,7 @@
 	grid-template-columns: 2fr 3fr;
 	place-items: center center;
 	overflow: hidden;
+	--img-size: 250px;
 	--overlay-left: 60%;
 	--overlay-width: 800px;
 	--overlay-height: 800px;
@@ -109,18 +110,28 @@
 	background-color: var(--btn-hover-clr);
 }
 
-#about .profile-picture {
-	--img-size: 200px;
-
+#about .image-wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: var(--img-size);
 	height: var(--img-size);
 	background: transparent;
 	border-radius: 50%;
 	color: white;
-	box-shadow: 0 0 10px 0 white;
-	text-align: center;
-	line-height: var(--img-size);
-	z-index: 1;
+	box-shadow: 0 0 10px 0 black;
+	z-index: 100;
+	overflow: hidden;
+}
+
+#about .profile-picture[src]{
+	position: absolute;
+	width: var(--img-size);
+	height: var(--img-size);
+	object-fit: contain;
+	object-position: 45px 25px;
+	transform: scale(5);
 }
 
 #about .profile-picture:not([src]) {
@@ -196,7 +207,11 @@
 }
 
 @media screen and (width <= 25rem) {
-	#about .profile-picture {
+	:root {
 		--img-size: 150px;
 	}
+
+	#about .profile-picture[src]{
+		object-position: 27px 15px;
+}
 }
